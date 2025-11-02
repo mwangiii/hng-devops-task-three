@@ -1,0 +1,48 @@
+102.219.210.38 - - [01/Nov/2025:23:23:38 +0000] "\x16\x03\x01\x07E\x01\x00\x07A\x03\x03\x5C\xBB,\x22\xF4J\xE4\xC4\xC0VJ\xD6^\xD1\x99!\xDD\x02\xC6\x01\x94\xC8EGcy\xC7\xB8g\xC2\x16S \xB6q\x9D\xBF\xB3\xFD\xE1\xA5e\xBB\x05\xDB9" 400 157 "-" "-" "-"
+102.219.210.38 - - [01/Nov/2025:23:23:38 +0000] "\x16\x03\x01\x07E\x01\x00\x07A\x03\x03\x5C\xBB,\x22\xF4J\xE4\xC4\xC0VJ\xD6^\xD1\x99!\xDD\x02\xC6\x01\x94\xC8EGcy\xC7\xB8g\xC2\x16S \xB6q\x9D\xBF\xB3\xFD\xE1\xA5e\xBB\x05\xDB9" 400 157 pool=- release=- upstream_status=- upstream_addr=- request_time=0.223 upstream_response_time=-
+102.219.210.38 - - [01/Nov/2025:23:23:39 +0000] "\x16\x03\x01\x02t\x01\x00\x02p\x03\x03L\xC5\x10\x8C\xF9A\x08r7" 400 157 "-" "-" "-"
+102.219.210.38 - - [01/Nov/2025:23:23:39 +0000] "\x16\x03\x01\x02t\x01\x00\x02p\x03\x03L\xC5\x10\x8C\xF9A\x08r7" 400 157 pool=- release=- upstream_status=- upstream_addr=- request_time=0.219 upstream_response_time=-
+102.219.210.38 - - [01/Nov/2025:23:23:41 +0000] "GET / HTTP/1.1" 200 1247 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0" "-"
+102.219.210.38 - - [01/Nov/2025:23:23:41 +0000] "GET / HTTP/1.1" 200 1247 pool=- release=- upstream_status=200 upstream_addr=172.18.0.3:3000 request_time=0.026 upstream_response_time=0.026
+102.219.210.38 - - [01/Nov/2025:23:23:42 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://34.9.74.133:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0" "-"
+102.219.210.38 - - [01/Nov/2025:23:23:42 +0000] "GET /favicon.ico HTTP/1.1" 404 150 pool=- release=- upstream_status=404 upstream_addr=172.18.0.3:3000 request_time=0.004 upstream_response_time=0.005
+172.18.0.1 - - [01/Nov/2025:23:24:19 +0000] "GET / HTTP/1.1" 200 1247 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:24:19 +0000] "GET / HTTP/1.1" 200 1247 pool=- release=- upstream_status=200 upstream_addr=172.18.0.3:3000 request_time=0.002 upstream_response_time=0.003
+172.18.0.1 - - [01/Nov/2025:23:25:31 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:25:31 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.015 upstream_response_time=0.002, 0.012
+172.18.0.1 - - [01/Nov/2025:23:25:59 +0000] "POST /version HTTP/1.1" 500 34 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:25:59 +0000] "POST /version HTTP/1.1" 500 34 pool=- release=- upstream_status=500 upstream_addr=172.18.0.3:3000 request_time=0.001 upstream_response_time=0.002
+172.18.0.1 - - [01/Nov/2025:23:26:15 +0000] "POST /version HTTP/1.1" 500 34 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:26:15 +0000] "POST /version HTTP/1.1" 500 34 pool=- release=- upstream_status=500 upstream_addr=172.18.0.3:3000 request_time=0.002 upstream_response_time=0.002
+172.18.0.1 - - [01/Nov/2025:23:34:34 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:34:34 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=200 upstream_addr=172.18.0.3:3000 request_time=0.012 upstream_response_time=0.012
+172.18.0.1 - - [01/Nov/2025:23:34:58 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:34:58 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.019 upstream_response_time=0.006, 0.013
+172.18.0.1 - - [01/Nov/2025:23:38:34 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:38:34 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.007 upstream_response_time=0.002, 0.005
+172.18.0.1 - - [01/Nov/2025:23:38:34 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:38:34 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=200 upstream_addr=172.18.0.2:3000 request_time=0.003 upstream_response_time=0.002
+172.18.0.1 - - [01/Nov/2025:23:38:34 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:38:34 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=200 upstream_addr=172.18.0.2:3000 request_time=0.002 upstream_response_time=0.002
+172.18.0.1 - - [01/Nov/2025:23:39:15 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:39:15 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.005 upstream_response_time=0.003, 0.002
+172.18.0.1 - - [01/Nov/2025:23:39:21 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:39:21 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003, 0.003
+172.18.0.1 - - [01/Nov/2025:23:39:50 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:39:50 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.005 upstream_response_time=0.003, 0.003
+172.18.0.1 - - [01/Nov/2025:23:39:55 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:39:55 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.013 upstream_response_time=0.006, 0.008
+172.18.0.1 - - [01/Nov/2025:23:40:39 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:40:39 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.005 upstream_response_time=0.003, 0.003
+172.18.0.1 - - [01/Nov/2025:23:40:39 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:40:39 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=200 upstream_addr=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.006
+172.18.0.1 - - [01/Nov/2025:23:40:39 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:40:39 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=200 upstream_addr=172.18.0.2:3000 request_time=0.010 upstream_response_time=0.010
+172.18.0.1 - - [01/Nov/2025:23:41:07 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:41:07 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.007 upstream_response_time=0.004, 0.003
+172.18.0.1 - - [01/Nov/2025:23:41:28 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:41:28 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.005 upstream_response_time=0.002, 0.003
+172.18.0.1 - - [01/Nov/2025:23:41:35 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/7.81.0" "-"
+172.18.0.1 - - [01/Nov/2025:23:41:35 +0000] "GET /version HTTP/1.1" 200 57 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.006 upstream_response_time=0.002, 0.004
+204.76.203.212 - - [02/Nov/2025:00:11:47 +0000] "GET / HTTP/1.1" 200 1247 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46" "-"
+204.76.203.212 - - [02/Nov/2025:00:11:47 +0000] "GET / HTTP/1.1" 200 1247 pool=- release=- upstream_status=500, 200 upstream_addr=172.18.0.3:3000, 172.18.0.2:3000 request_time=0.019 upstream_response_time=0.010, 0.009

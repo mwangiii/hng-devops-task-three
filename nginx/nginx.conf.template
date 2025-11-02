@@ -1,0 +1,98 @@
+# ===============================
+# Map upstream addresses to pool names
+# This map checks the upstream_addr which contains IP:PORT
+# We'll map based on the port since blue=8081 and green=8082
+# ===============================
+map $upstream_addr $pool_name {
+    ~*:8081 blue;
+    ~*8081 blue;
+    ~*:8082 green;
+    ~*8082 green;
+    default unknown;
+}
+
+# Alternative: Map based on the upstream header from the app
+map $upstream_http_x_app_pool $pool_from_header {
+    blue blue;
+    green green;
+    default unknown;
+}
+
+# Use whichever is not empty/unknown
+map "$pool_from_header:$pool_name" $final_pool {
+    ~^blue blue;
+    ~^green green;
+    ~:blue blue;
+    ~:green green;
+    default unknown;
+}
+
+# ===============================
+# Upstream backend definition
+# ===============================
+upstream app_backend {
+    server blue:3000 max_fails=1 fail_timeout=3s;
+    server green:3000 backup;
+}
+
+# ===============================
+# JSON Log Format for Watcher
+# ===============================
+log_format json_custom escape=json '{'
+  '"time":"$time_iso8601",'
+  '"remote_addr":"$remote_addr",'
+  '"request":"$request",'
+  '"status":$status,'
+  '"body_bytes_sent":$body_bytes_sent,'
+  '"request_time":$request_time,'
+  '"upstream_addr":"$upstream_addr",'
+  '"upstream_status":"$upstream_status",'
+  '"upstream_response_time":"$upstream_response_time",'
+  '"pool":"$final_pool",'
+  '"release":"$upstream_http_x_release_id"'
+'}';
+
+# ===============================
+# Access & Error Logs
+# ===============================
+access_log /var/log/nginx/access.log json_custom;
+error_log /var/log/nginx/error.log warn;
+
+# ===============================
+# Main HTTP Server
+# ===============================
+server {
+    listen 80;
+
+    # Root location: proxy to backend
+    location / {
+        proxy_pass http://app_backend;
+        proxy_http_version 1.1;
+
+        # Preserve client info
+        proxy_set_header Connection "";
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+        # Upstream timeouts
+        proxy_connect_timeout 5s;
+        proxy_send_timeout 5s;
+        proxy_read_timeout 5s;
+
+        # Retry on upstream errors
+        proxy_next_upstream error timeout http_500 http_502 http_503 http_504;
+        proxy_next_upstream_tries 2;
+
+        # Forward upstream headers to client
+        add_header X-App-Pool $upstream_http_x_app_pool always;
+        add_header X-Release-Id $upstream_http_x_release_id always;
+    }
+
+    # Health check endpoint
+    location /healthz {
+        access_log off;
+        return 200 'OK';
+        add_header Content-Type text/plain;
+    }
+}

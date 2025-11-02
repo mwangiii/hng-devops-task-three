@@ -1,0 +1,52 @@
+2025/11/01 23:22:33 [notice] 1#1: using the "epoll" event method
+2025/11/01 23:22:33 [notice] 1#1: nginx/1.29.2
+2025/11/01 23:22:33 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/11/01 23:22:33 [notice] 1#1: OS: Linux 6.8.0-1042-gcp
+2025/11/01 23:22:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/11/01 23:22:33 [notice] 1#1: start worker processes
+2025/11/01 23:22:33 [notice] 1#1: start worker process 8
+2025/11/01 23:22:33 [notice] 1#1: start worker process 9
+2025/11/01 23:25:31 [warn] 9#9: *8 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:33:23 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/11/01 23:33:23 [notice] 8#8: gracefully shutting down
+2025/11/01 23:33:23 [notice] 9#9: gracefully shutting down
+2025/11/01 23:33:23 [notice] 8#8: exiting
+2025/11/01 23:33:23 [notice] 9#9: exiting
+2025/11/01 23:33:23 [notice] 8#8: exit
+2025/11/01 23:33:23 [notice] 9#9: exit
+2025/11/01 23:33:23 [notice] 1#1: signal 17 (SIGCHLD) received from 8
+2025/11/01 23:33:23 [notice] 1#1: worker process 8 exited with code 0
+2025/11/01 23:33:23 [notice] 1#1: signal 29 (SIGIO) received
+2025/11/01 23:33:23 [notice] 1#1: signal 17 (SIGCHLD) received from 9
+2025/11/01 23:33:23 [notice] 1#1: worker process 9 exited with code 0
+2025/11/01 23:33:23 [notice] 1#1: exit
+2025/11/01 23:33:38 [notice] 1#1: using the "epoll" event method
+2025/11/01 23:33:38 [notice] 1#1: nginx/1.29.2
+2025/11/01 23:33:38 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2025/11/01 23:33:38 [notice] 1#1: OS: Linux 6.8.0-1042-gcp
+2025/11/01 23:33:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/11/01 23:33:38 [notice] 1#1: start worker processes
+2025/11/01 23:33:38 [notice] 1#1: start worker process 7
+2025/11/01 23:33:38 [notice] 1#1: start worker process 8
+2025/11/01 23:34:58 [warn] 8#8: *3 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:38:34 [warn] 7#7: *6 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:39:15 [warn] 7#7: *13 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:39:21 [warn] 7#7: *16 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:39:50 [warn] 7#7: *19 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:39:55 [warn] 7#7: *22 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:40:39 [warn] 7#7: *25 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:41:07 [warn] 7#7: *32 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:41:28 [warn] 7#7: *35 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/01 23:41:35 [warn] 7#7: *38 upstream server temporarily disabled while reading response header from upstream, client: 172.18.0.1, server: , request: "GET /version HTTP/1.1", upstream: "http://172.18.0.3:3000/version", host: "localhost:8080"
+2025/11/02 00:11:47 [warn] 7#7: *41 upstream server temporarily disabled while reading response header from upstream, client: 204.76.203.212, server: , request: "GET / HTTP/1.1", upstream: "http://172.18.0.3:3000/", host: "34.9.74.133:8080"
+2025/11/02 00:23:30 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/11/02 00:23:30 [notice] 8#8: gracefully shutting down
+2025/11/02 00:23:30 [notice] 8#8: exiting
+2025/11/02 00:23:30 [notice] 7#7: gracefully shutting down
+2025/11/02 00:23:30 [notice] 7#7: exiting
+2025/11/02 00:23:30 [notice] 7#7: exit
+2025/11/02 00:23:30 [notice] 8#8: exit
+2025/11/02 00:23:30 [notice] 1#1: signal 17 (SIGCHLD) received from 8
+2025/11/02 00:23:30 [notice] 1#1: worker process 7 exited with code 0
+2025/11/02 00:23:30 [notice] 1#1: worker process 8 exited with code 0
+2025/11/02 00:23:30 [notice] 1#1: exit
