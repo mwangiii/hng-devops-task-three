@@ -23,7 +23,7 @@ A production-ready blue/green deployment setup with Nginx reverse proxy, automat
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/blue-green-deployment.git
+git clone https://github.com/mwangiii/blue-green-deployment.git
 cd blue-green-deployment
 ```
 
